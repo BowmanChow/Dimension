@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_diary">
+
+    <fragment
+        android:id="@+id/navigation_diary"
+        android:name="com.bowman.dimension.ui.diary.DiaryFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_diary" />
+
+    <fragment
+        android:id="@+id/navigation_anniversary"
+        android:name="com.bowman.dimension.ui.anniversary.AnniversaryFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_anniversary" />
+
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.bowman.dimension.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
